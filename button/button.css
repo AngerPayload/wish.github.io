@@ -1,0 +1,176 @@
+html {
+  height: 100%;
+}
+/*
+body {
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+}
+*/
+body {
+  font: 700 14px/1 'Red Hat Text', sans-serif;
+  background: url("button-images/bg-stars.svg"), #1b1924;
+  height: auto;
+  margin: 0;
+}
+
+main {
+  height: 77.5vh;
+  background: url(button-images/pattern-hills.svg) no-repeat 0 bottom;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 15vh;
+  position: relative;
+}
+
+body,
+.example h1,
+.example p,
+.example .button {
+  transition: all .2s ease-in-out;
+}
+
+body.light-theme {
+  background-color: #151515;
+}
+
+body.light-theme .example h1 {
+  color: #FFFFFF;
+}
+
+body.light-theme .example p {
+  color: #FFFFFF;
+}
+
+body.light-theme .buttons .button {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+body.light-theme .buttons .button:hover {
+  color: #151515;
+  background-color: #FFFFFF;
+}
+
+.example {
+  font-family: 'Roboto', sans-serif;
+  width: 550px;
+  height: 378px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.example .flipdown {
+  margin: auto;
+}
+
+.example h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+  color: #FFF;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.example p {
+  text-align: center;
+  font-weight: 100;
+  color: #FFF;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.example .buttons {
+  width: 100%;
+  height: 50px;
+  margin: 50px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.example .buttons p {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  padding: 0px 25px 0px 0px;
+  color: #333;
+  margin: 0px;
+}
+
+.example .button {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  line-height: 46px;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0px 20px;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.example .button:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+.example .button i {
+  margin-right: 5px;
+}
+
+@media(max-width: 550px) {
+  .example {
+    width: 100%;
+    height: 362px;
+  }
+
+  .example h1 {
+    font-size: 2.5em;
+  }
+
+  .example p {
+    margin-bottom: 25px;
+  }
+
+  .example .buttons {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+  }
+
+  .example .buttons p,
+  .example .buttons a {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .example .buttons p {
+    padding-right: 0px;
+  }
+
+  .example .buttons a {
+    display: inline-block;
+  }
+}
